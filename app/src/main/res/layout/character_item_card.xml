@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/characterItemCard"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="8dp"
+    app:cardCornerRadius="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageCharacter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/valorant_fade" />
+
+        <ImageView
+            android:id="@+id/imageFavButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="12dp"
+            android:padding="8dp"
+            android:background="@drawable/bg_header_play"
+            android:backgroundTint="@color/transparent_white"
+            android:src="@drawable/ic_favorite_border" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:background="#CC000000">
+
+            <TextView
+                android:id="@+id/textCharacterName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="4dp"
+                android:paddingHorizontal="16dp"
+                android:textColor="@color/white"
+                tools:text="Valorant Character" />
+        </FrameLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

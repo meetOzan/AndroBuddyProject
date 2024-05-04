@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AndroBuddyProject</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="valorant_home_header">valorant_home_header</string>
+    <string name="play">Play</string>
+    <string name="play_image_header">play_image_header</string>
+</resources>
